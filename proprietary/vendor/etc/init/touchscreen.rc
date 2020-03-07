@@ -1,0 +1,14 @@
+# this init flow for touchscreen
+
+on boot
+# add for touch self-test
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_cmd
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_filename
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_ini_file_path
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_path
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_name
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_cmd
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_filename
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_ini_file_path
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_path
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_name
